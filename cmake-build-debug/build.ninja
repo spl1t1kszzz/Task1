@@ -144,8 +144,8 @@ build CMakeFiles/task_1_tests.dir/test/test_main.cpp.o: CXX_COMPILER__task_1_tes
   OBJECT_DIR = CMakeFiles/task_1_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/task_1_tests.dir/test
 
-build CMakeFiles/task_1_tests.dir/test/test_point3d.cpp.o: CXX_COMPILER__task_1_tests_unscanned_Debug /Users/nikson/CLionProjects/poissonsoft_task1/test/test_point3d.cpp || cmake_object_order_depends_target_task_1_tests
-  DEP_FILE = CMakeFiles/task_1_tests.dir/test/test_point3d.cpp.o.d
+build CMakeFiles/task_1_tests.dir/test/test_task1.cpp.o: CXX_COMPILER__task_1_tests_unscanned_Debug /Users/nikson/CLionProjects/poissonsoft_task1/test/test_task1.cpp || cmake_object_order_depends_target_task_1_tests
+  DEP_FILE = CMakeFiles/task_1_tests.dir/test/test_task1.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
   INCLUDES = -isystem /Users/nikson/CLionProjects/poissonsoft_task1/googletest/googletest/include -isystem /Users/nikson/CLionProjects/poissonsoft_task1/googletest/googletest
   OBJECT_DIR = CMakeFiles/task_1_tests.dir
@@ -159,7 +159,7 @@ build CMakeFiles/task_1_tests.dir/test/test_point3d.cpp.o: CXX_COMPILER__task_1_
 #############################################
 # Link the executable task_1_tests
 
-build task_1_tests: CXX_EXECUTABLE_LINKER__task_1_tests_Debug CMakeFiles/task_1_tests.dir/test/test_main.cpp.o CMakeFiles/task_1_tests.dir/test/test_point3d.cpp.o | lib/libgtest.a lib/libgtest_main.a libtask1_lib.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libtask1_lib.a
+build task_1_tests: CXX_EXECUTABLE_LINKER__task_1_tests_Debug CMakeFiles/task_1_tests.dir/test/test_main.cpp.o CMakeFiles/task_1_tests.dir/test/test_task1.cpp.o | lib/libgtest.a lib/libgtest_main.a libtask1_lib.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libtask1_lib.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  libtask1_lib.a  lib/libgtest.a
   OBJECT_DIR = CMakeFiles/task_1_tests.dir

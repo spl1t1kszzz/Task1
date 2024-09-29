@@ -23,7 +23,7 @@ enable_testing()
 
 add_executable(task_1_tests
         test/test_main.cpp
-        test/test_point3d.cpp
+        test/test_task1.cpp
 )
 
 target_link_libraries(task_1_tests gtest gtest_main task1_lib)

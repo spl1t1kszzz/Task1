@@ -25,9 +25,10 @@ TEST(Task1, polyline1_projection_point) {
     Point3D point{0.6, 0.4, 0.0};
     Polyline3D poly{points};
     auto seg = Segment3D(b, c);
-    ASSERT_DOUBLE_EQ(DistanceCalc::get_projection_point(point, seg).get_x(), 0.72357550237194168);
-    ASSERT_DOUBLE_EQ(DistanceCalc::get_projection_point(point, seg).get_y(), 0.67583817493737);
-    ASSERT_DOUBLE_EQ(DistanceCalc::get_projection_point(point, seg).get_z(), 0.0);
+    auto pp = DistanceCalc::get_projection_point(point, seg)
+    ASSERT_DOUBLE_EQ(pp.get_x(), 0.72357550237194168);
+    ASSERT_DOUBLE_EQ(pp.get_y(), 0.67583817493737);
+    ASSERT_DOUBLE_EQ(pp.get_z(), 0.0);
 }
 
 
